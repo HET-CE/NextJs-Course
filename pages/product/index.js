@@ -11,7 +11,6 @@ function index() {
       <Link href="/product/2">Product 2</Link>
       <br />
       <Link href="/product/3">Product 3</Link>
-      <br />
     </div>
   );
 }

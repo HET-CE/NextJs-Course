@@ -9,7 +9,6 @@ function Doc() {
   if (params.length === 1) {
     return <h1>Viewing docs for Feature {params[0]}</h1>;
   } else if (params.length === 2) {
-    console.log(params);
     return (
       <h1>
         Viewing docs for feature {params[0]} and for concept {params[1]}
