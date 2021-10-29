@@ -1,0 +1,12 @@
+.layout-header {
+  background-color: chocolate;
+  color: cornsilk;
+  text-align: center;
+  padding: 30px;
+}
+.layout-footer {
+  background-color: chocolate;
+  color: cornsilk;
+  text-align: center;
+  padding: 20px;
+}
