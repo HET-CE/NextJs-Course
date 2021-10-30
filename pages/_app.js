@@ -1,7 +1,10 @@
+import { Provider } from "next-auth/client";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../styles/globals.css";
 import "../styles/layout.css";
+import "../components/Navbar.css";
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   if (Component.getLayout) {
@@ -10,9 +13,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <Provider session={pageProps.session}>
+        <Navbar />
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </Provider>
     </>
   );
 }
